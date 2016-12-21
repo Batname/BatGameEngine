@@ -6,8 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */; };
+		185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */; };
+		185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0C11E0AEF0F0014CB12 /* includes.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		185DD0AC1E0AE80E0014CB12 /* libBatGameEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBatGameEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BatGameEngine.cpp; sourceTree = "<group>"; };
+		185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BatGameEngine.hpp; sourceTree = "<group>"; };
+		185DD0C11E0AEF0F0014CB12 /* includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +33,7 @@
 		185DD0A31E0AE80E0014CB12 = {
 			isa = PBXGroup;
 			children = (
+				185DD0B91E0AE8B10014CB12 /* BatGameEngine */,
 				185DD0AD1E0AE80E0014CB12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,6 +46,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		185DD0B91E0AE8B10014CB12 /* BatGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				185DD0C01E0AEEE10014CB12 /* Classes */,
+				185DD0C11E0AEF0F0014CB12 /* includes.h */,
+			);
+			name = BatGameEngine;
+			sourceTree = "<group>";
+		};
+		185DD0C01E0AEEE10014CB12 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */,
+				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -43,6 +71,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */,
+				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +107,8 @@
 				TargetAttributes = {
 					185DD0AB1E0AE80E0014CB12 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 8EW7N93938;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -103,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +231,13 @@
 		185DD0B11E0AE80E0014CB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 8EW7N93938;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,9 +245,15 @@
 		185DD0B21E0AE80E0014CB12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 8EW7N93938;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +277,7 @@
 				185DD0B21E0AE80E0014CB12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

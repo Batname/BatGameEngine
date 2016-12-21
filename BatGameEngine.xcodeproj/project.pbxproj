@@ -10,6 +10,12 @@
 		185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */; };
 		185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */; };
 		185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0C11E0AEF0F0014CB12 /* includes.h */; };
+		185DD0C51E0AF2210014CB12 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C41E0AF2210014CB12 /* OpenGL.framework */; };
+		185DD0CA1E0AF2A30014CB12 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C61E0AF2A30014CB12 /* QtCore.framework */; };
+		185DD0CB1E0AF2A30014CB12 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C71E0AF2A30014CB12 /* QtGui.framework */; };
+		185DD0CC1E0AF2A30014CB12 /* QtOpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */; };
+		185DD0CD1E0AF2A30014CB12 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */; };
+		185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +23,12 @@
 		185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BatGameEngine.cpp; sourceTree = "<group>"; };
 		185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BatGameEngine.hpp; sourceTree = "<group>"; };
 		185DD0C11E0AEF0F0014CB12 /* includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
+		185DD0C41E0AF2210014CB12 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		185DD0C61E0AF2A30014CB12 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtCore.framework"; sourceTree = "<group>"; };
+		185DD0C71E0AF2A30014CB12 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtGui.framework"; sourceTree = "<group>"; };
+		185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtOpenGL.framework"; sourceTree = "<group>"; };
+		185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtWidgets.framework"; sourceTree = "<group>"; };
+		185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +36,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */,
+				185DD0CA1E0AF2A30014CB12 /* QtCore.framework in Frameworks */,
+				185DD0CB1E0AF2A30014CB12 /* QtGui.framework in Frameworks */,
+				185DD0CC1E0AF2A30014CB12 /* QtOpenGL.framework in Frameworks */,
+				185DD0CD1E0AF2A30014CB12 /* QtWidgets.framework in Frameworks */,
+				185DD0C51E0AF2210014CB12 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +53,7 @@
 			children = (
 				185DD0B91E0AE8B10014CB12 /* BatGameEngine */,
 				185DD0AD1E0AE80E0014CB12 /* Products */,
+				185DD0C31E0AF2210014CB12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,19 @@
 				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		185DD0C31E0AF2210014CB12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */,
+				185DD0C61E0AF2A30014CB12 /* QtCore.framework */,
+				185DD0C71E0AF2A30014CB12 /* QtGui.framework */,
+				185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */,
+				185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */,
+				185DD0C41E0AF2210014CB12 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +269,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/qt@5.5/5.5.1/lib",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.3/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.0.0/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -252,6 +296,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/qt@5.5/5.5.1/lib",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.3/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.0.0/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

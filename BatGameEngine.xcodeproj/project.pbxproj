@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */; };
-		185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */; };
 		185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 185DD0C11E0AEF0F0014CB12 /* includes.h */; };
 		185DD0C51E0AF2210014CB12 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C41E0AF2210014CB12 /* OpenGL.framework */; };
 		185DD0CA1E0AF2A30014CB12 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C61E0AF2A30014CB12 /* QtCore.framework */; };
@@ -37,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		185DD0AC1E0AE80E0014CB12 /* libBatGameEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBatGameEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BatGameEngine.cpp; sourceTree = "<group>"; };
-		185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BatGameEngine.hpp; sourceTree = "<group>"; };
 		185DD0C11E0AEF0F0014CB12 /* includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes.h; sourceTree = "<group>"; };
 		185DD0C41E0AF2210014CB12 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		185DD0C61E0AF2A30014CB12 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtCore.framework"; sourceTree = "<group>"; };
@@ -112,8 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				18E460801E0C384700A27CA9 /* Math */,
-				185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */,
-				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -167,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */,
-				185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */,
 				18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */,
 				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
 			);
@@ -253,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,8 +16,6 @@
 		185DD0CC1E0AF2A30014CB12 /* QtOpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */; };
 		185DD0CD1E0AF2A30014CB12 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */; };
 		185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */; };
-		18E460681E0C007800A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
-		18E4606A1E0C016400A27CA9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* test.cpp */; };
 		18E460741E0C033800A27CA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460731E0C033800A27CA9 /* main.cpp */; };
 		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
 		18E4607A1E0C047C00A27CA9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* test.cpp */; };
@@ -50,6 +48,7 @@
 		18E460691E0C016400A27CA9 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../test.cpp; sourceTree = "<group>"; };
 		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E460731E0C033800A27CA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		18E4607B1E0C069A00A27CA9 /* includes_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes_test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E460681E0C007800A27CA9 /* libgtest.a in Frameworks */,
 				185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */,
 				185DD0CA1E0AF2A30014CB12 /* QtCore.framework in Frameworks */,
 				185DD0CB1E0AF2A30014CB12 /* QtGui.framework in Frameworks */,
@@ -134,6 +132,7 @@
 			children = (
 				18E460691E0C016400A27CA9 /* test.cpp */,
 				18E460731E0C033800A27CA9 /* main.cpp */,
+				18E4607B1E0C069A00A27CA9 /* includes_test.h */,
 			);
 			path = BatGameEngineTest;
 			sourceTree = "<group>";
@@ -231,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */,
-				18E4606A1E0C016400A27CA9 /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +391,10 @@
 		18E460761E0C033800A27CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.3/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/gtest,
@@ -405,7 +406,10 @@
 		18E460771E0C033800A27CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.3/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/gtest,

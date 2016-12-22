@@ -1,6 +1,4 @@
-//#include "includes.h"
-
-#include <gtest/gtest.h>
+#include "includes_test.h"
 
 int main(int argc, char * argv[]) {
     

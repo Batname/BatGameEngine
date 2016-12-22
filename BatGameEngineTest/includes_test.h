@@ -16,11 +16,24 @@
 // Math
 #include <math.h>
 
+// c lib
+#include <stdlib.h>
+
 // GLM
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtx/string_cast.hpp>
+
+// qt
+#include <QtWidgets/qapplication.h>
+#include <QtCore/qfile.h>
+#include <QtCore/qfile.h>
+#include <QtCore/qtimer.h>
+#include <QtCore/qthread.h>
+#include <QtCore/qdebug.h>
+#include <QtCore/qdatetime.h>
+#include <QtTest/qtest.h>
 
 
 #endif /* includes_test_h */

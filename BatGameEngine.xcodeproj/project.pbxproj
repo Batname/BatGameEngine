@@ -19,6 +19,14 @@
 		18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* Vector2DTests.cpp */; };
 		18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4607C1E0C2E2400A27CA9 /* Vector2D.h */; };
 		18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */; };
+		18E460871E0C820A00A27CA9 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460851E0C820A00A27CA9 /* Clock.cpp */; };
+		18E460881E0C820A00A27CA9 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460851E0C820A00A27CA9 /* Clock.cpp */; };
+		18E460891E0C820A00A27CA9 /* Clock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 18E460861E0C820A00A27CA9 /* Clock.hpp */; };
+		18E4608A1E0C837B00A27CA9 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C61E0AF2A30014CB12 /* QtCore.framework */; };
+		18E4608B1E0C837B00A27CA9 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C71E0AF2A30014CB12 /* QtGui.framework */; };
+		18E4608D1E0C837B00A27CA9 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */; };
+		18E460901E0C847800A27CA9 /* ClockTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E4608F1E0C847800A27CA9 /* ClockTests.cpp */; };
+		18E460921E0C86D700A27CA9 /* QtTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460911E0C86D700A27CA9 /* QtTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +57,10 @@
 		18E4607B1E0C069A00A27CA9 /* includes_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes_test.h; sourceTree = "<group>"; };
 		18E4607C1E0C2E2400A27CA9 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.inl.h; sourceTree = "<group>"; };
+		18E460851E0C820A00A27CA9 /* Clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clock.cpp; sourceTree = "<group>"; };
+		18E460861E0C820A00A27CA9 /* Clock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Clock.hpp; sourceTree = "<group>"; };
+		18E4608F1E0C847800A27CA9 /* ClockTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockTests.cpp; sourceTree = "<group>"; };
+		18E460911E0C86D700A27CA9 /* QtTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtTest.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtTest.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E460921E0C86D700A27CA9 /* QtTest.framework in Frameworks */,
+				18E4608A1E0C837B00A27CA9 /* QtCore.framework in Frameworks */,
+				18E4608B1E0C837B00A27CA9 /* QtGui.framework in Frameworks */,
+				18E4608D1E0C837B00A27CA9 /* QtWidgets.framework in Frameworks */,
 				18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +123,7 @@
 		185DD0C01E0AEEE10014CB12 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18E460841E0C81EC00A27CA9 /* Timing */,
 				18E460801E0C384700A27CA9 /* Math */,
 			);
 			name = Classes;
@@ -115,6 +132,7 @@
 		185DD0C31E0AF2210014CB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18E460911E0C86D700A27CA9 /* QtTest.framework */,
 				18E460671E0C007800A27CA9 /* libgtest.a */,
 				185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */,
 				185DD0C61E0AF2A30014CB12 /* QtCore.framework */,
@@ -129,6 +147,7 @@
 		18E460721E0C033800A27CA9 /* BatGameEngineTest */ = {
 			isa = PBXGroup;
 			children = (
+				18E4608E1E0C846100A27CA9 /* Timing */,
 				18E460811E0C385A00A27CA9 /* Math */,
 				18E460731E0C033800A27CA9 /* main.cpp */,
 				18E4607B1E0C069A00A27CA9 /* includes_test.h */,
@@ -153,6 +172,23 @@
 			name = Math;
 			sourceTree = "<group>";
 		};
+		18E460841E0C81EC00A27CA9 /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				18E460851E0C820A00A27CA9 /* Clock.cpp */,
+				18E460861E0C820A00A27CA9 /* Clock.hpp */,
+			);
+			name = Timing;
+			sourceTree = "<group>";
+		};
+		18E4608E1E0C846100A27CA9 /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				18E4608F1E0C847800A27CA9 /* ClockTests.cpp */,
+			);
+			name = Timing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -163,6 +199,7 @@
 				18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */,
 				18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */,
 				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
+				18E460891E0C820A00A27CA9 /* Clock.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E460871E0C820A00A27CA9 /* Clock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */,
+				18E460881E0C820A00A27CA9 /* Clock.cpp in Sources */,
+				18E460901E0C847800A27CA9 /* ClockTests.cpp in Sources */,
 				18E460741E0C033800A27CA9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +447,10 @@
 		18E460761E0C033800A27CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/qt@5.5/5.5.1/lib",
+				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/glm/0.9.8.3/include,
@@ -422,6 +466,10 @@
 		18E460771E0C033800A27CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/qt@5.5/5.5.1/lib",
+				);
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					/usr/local/Cellar/glm/0.9.8.3/include,

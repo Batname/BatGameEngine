@@ -8,10 +8,11 @@ namespace Timing {
     {
     public:
         Clock();
+        void run();
         void update();
         float getDeltaTime();
     private:
-        float deltaTime = 0.0f;
+        int deltaTime = 0;
         long long int lastFrame = 0;
     };
 }

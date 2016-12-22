@@ -5,6 +5,11 @@ namespace Timing {
     {
     }
     
+    void Clock::run()
+    {
+        lastFrame = QDateTime::currentMSecsSinceEpoch();
+    }
+    
     void Clock::update()
     {
         long long int currentFrame = QDateTime::currentMSecsSinceEpoch();
@@ -14,7 +19,7 @@ namespace Timing {
     
     float Clock::getDeltaTime()
     {
-        return deltaTime;
+        return (float)deltaTime / 1000;
     }
 }
 

@@ -18,7 +18,8 @@
 		185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */; };
 		18E460741E0C033800A27CA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460731E0C033800A27CA9 /* main.cpp */; };
 		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
-		18E4607A1E0C047C00A27CA9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* test.cpp */; };
+		18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* Vector2DTests.cpp */; };
+		18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4607C1E0C2E2400A27CA9 /* Vector2D.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,10 +46,11 @@
 		185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtWidgets.framework"; sourceTree = "<group>"; };
 		185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		18E460671E0C007800A27CA9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
-		18E460691E0C016400A27CA9 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../test.cpp; sourceTree = "<group>"; };
+		18E460691E0C016400A27CA9 /* Vector2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2DTests.cpp; path = ../Vector2DTests.cpp; sourceTree = "<group>"; };
 		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E460731E0C033800A27CA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		18E4607B1E0C069A00A27CA9 /* includes_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes_test.h; sourceTree = "<group>"; };
+		18E4607C1E0C2E2400A27CA9 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */,
 				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
+				18E4607C1E0C2E2400A27CA9 /* Vector2D.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -130,7 +133,7 @@
 		18E460721E0C033800A27CA9 /* BatGameEngineTest */ = {
 			isa = PBXGroup;
 			children = (
-				18E460691E0C016400A27CA9 /* test.cpp */,
+				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
 				18E460731E0C033800A27CA9 /* main.cpp */,
 				18E4607B1E0C069A00A27CA9 /* includes_test.h */,
 			);
@@ -144,6 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */,
 				185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */,
 				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
 			);
@@ -237,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E4607A1E0C047C00A27CA9 /* test.cpp in Sources */,
+				18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */,
 				18E460741E0C033800A27CA9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +450,7 @@
 				18E460771E0C033800A27CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

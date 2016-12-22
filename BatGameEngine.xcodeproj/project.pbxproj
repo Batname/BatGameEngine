@@ -111,10 +111,9 @@
 		185DD0C01E0AEEE10014CB12 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18E460801E0C384700A27CA9 /* Math */,
 				185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */,
 				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
-				18E4607C1E0C2E2400A27CA9 /* Vector2D.h */,
-				18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -136,11 +135,28 @@
 		18E460721E0C033800A27CA9 /* BatGameEngineTest */ = {
 			isa = PBXGroup;
 			children = (
-				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
+				18E460811E0C385A00A27CA9 /* Math */,
 				18E460731E0C033800A27CA9 /* main.cpp */,
 				18E4607B1E0C069A00A27CA9 /* includes_test.h */,
 			);
 			path = BatGameEngineTest;
+			sourceTree = "<group>";
+		};
+		18E460801E0C384700A27CA9 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */,
+				18E4607C1E0C2E2400A27CA9 /* Vector2D.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		18E460811E0C385A00A27CA9 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
+			);
+			name = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

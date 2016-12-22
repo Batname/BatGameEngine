@@ -10,21 +10,11 @@ namespace Math {
         Vector2D(float x, float y) : x(x), y(y) {}
     };
 
-    Vector2D operator+(const Vector2D& left, const Vector2D& right)
-    {
-        return Vector2D(left.x + right.x, left.y + right.y);
-    }
+    inline Vector2D operator+(const Vector2D& left, const Vector2D& right);
+    inline Vector2D operator*(float scalar, const Vector2D& vector);
+    inline Vector2D operator*(const Vector2D& vector, float scalar);
     
-    Vector2D operator*(float scalar, const Vector2D& vector)
-    {
-        return Vector2D(scalar * vector.x, scalar * vector.y);
-    }
-
-    Vector2D operator*(const Vector2D& vector, float scalar)
-    {
-        return Vector2D(vector.x * scalar, vector.y * scalar);
-    }
-    
+   #include "Vector2D.inl.h"
 }
 
 #endif /* Vector2D_h */

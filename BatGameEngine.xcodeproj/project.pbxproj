@@ -20,6 +20,7 @@
 		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
 		18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* Vector2DTests.cpp */; };
 		18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4607C1E0C2E2400A27CA9 /* Vector2D.h */; };
+		18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		18E460731E0C033800A27CA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		18E4607B1E0C069A00A27CA9 /* includes_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includes_test.h; sourceTree = "<group>"; };
 		18E4607C1E0C2E2400A27CA9 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.inl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				185DD0BA1E0AE8BB0014CB12 /* BatGameEngine.cpp */,
 				185DD0BB1E0AE8BB0014CB12 /* BatGameEngine.hpp */,
 				18E4607C1E0C2E2400A27CA9 /* Vector2D.h */,
+				18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */,
 				185DD0BD1E0AE8BB0014CB12 /* BatGameEngine.hpp in Headers */,
+				18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */,
 				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

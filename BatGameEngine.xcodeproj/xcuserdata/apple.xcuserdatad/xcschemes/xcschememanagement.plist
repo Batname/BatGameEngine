@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BatGameEngineTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>185DD0AB1E0AE80E0014CB12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18E460701E0C033800A27CA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

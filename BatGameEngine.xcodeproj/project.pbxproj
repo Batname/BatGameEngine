@@ -16,7 +16,24 @@
 		185DD0CC1E0AF2A30014CB12 /* QtOpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */; };
 		185DD0CD1E0AF2A30014CB12 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */; };
 		185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */; };
+		18E460681E0C007800A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
+		18E4606A1E0C016400A27CA9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* test.cpp */; };
+		18E460741E0C033800A27CA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460731E0C033800A27CA9 /* main.cpp */; };
+		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
+		18E4607A1E0C047C00A27CA9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* test.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18E4606F1E0C033800A27CA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		185DD0AC1E0AE80E0014CB12 /* libBatGameEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBatGameEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +46,10 @@
 		185DD0C81E0AF2A30014CB12 /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtOpenGL.framework"; sourceTree = "<group>"; };
 		185DD0C91E0AF2A30014CB12 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = "../../../../../usr/local/Cellar/qt@5.5/5.5.1/lib/QtWidgets.framework"; sourceTree = "<group>"; };
 		185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		18E460671E0C007800A27CA9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
+		18E460691E0C016400A27CA9 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../test.cpp; sourceTree = "<group>"; };
+		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E460731E0C033800A27CA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +57,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E460681E0C007800A27CA9 /* libgtest.a in Frameworks */,
 				185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */,
 				185DD0CA1E0AF2A30014CB12 /* QtCore.framework in Frameworks */,
 				185DD0CB1E0AF2A30014CB12 /* QtGui.framework in Frameworks */,
 				185DD0CC1E0AF2A30014CB12 /* QtOpenGL.framework in Frameworks */,
 				185DD0CD1E0AF2A30014CB12 /* QtWidgets.framework in Frameworks */,
 				185DD0C51E0AF2210014CB12 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E4606E1E0C033800A27CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				185DD0B91E0AE8B10014CB12 /* BatGameEngine */,
+				18E460721E0C033800A27CA9 /* BatGameEngineTest */,
 				185DD0AD1E0AE80E0014CB12 /* Products */,
 				185DD0C31E0AF2210014CB12 /* Frameworks */,
 			);
@@ -61,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				185DD0AC1E0AE80E0014CB12 /* libBatGameEngine.dylib */,
+				18E460711E0C033800A27CA9 /* BatGameEngineTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +118,7 @@
 		185DD0C31E0AF2210014CB12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18E460671E0C007800A27CA9 /* libgtest.a */,
 				185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */,
 				185DD0C61E0AF2A30014CB12 /* QtCore.framework */,
 				185DD0C71E0AF2A30014CB12 /* QtGui.framework */,
@@ -94,6 +127,15 @@
 				185DD0C41E0AF2210014CB12 /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18E460721E0C033800A27CA9 /* BatGameEngineTest */ = {
+			isa = PBXGroup;
+			children = (
+				18E460691E0C016400A27CA9 /* test.cpp */,
+				18E460731E0C033800A27CA9 /* main.cpp */,
+			);
+			path = BatGameEngineTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +170,23 @@
 			productReference = 185DD0AC1E0AE80E0014CB12 /* libBatGameEngine.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		18E460701E0C033800A27CA9 /* BatGameEngineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E460751E0C033800A27CA9 /* Build configuration list for PBXNativeTarget "BatGameEngineTest" */;
+			buildPhases = (
+				18E4606D1E0C033800A27CA9 /* Sources */,
+				18E4606E1E0C033800A27CA9 /* Frameworks */,
+				18E4606F1E0C033800A27CA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatGameEngineTest;
+			productName = BatGameEngineTest;
+			productReference = 18E460711E0C033800A27CA9 /* BatGameEngineTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +200,10 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8EW7N93938;
 						ProvisioningStyle = Manual;
+					};
+					18E460701E0C033800A27CA9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -157,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				185DD0AB1E0AE80E0014CB12 /* BatGameEngine */,
+				18E460701E0C033800A27CA9 /* BatGameEngineTest */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +231,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				185DD0BC1E0AE8BB0014CB12 /* BatGameEngine.cpp in Sources */,
+				18E4606A1E0C016400A27CA9 /* test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E4606D1E0C033800A27CA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E4607A1E0C047C00A27CA9 /* test.cpp in Sources */,
+				18E460741E0C033800A27CA9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +354,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/gtest,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,9 +382,34 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/gtest,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18E460761E0C033800A27CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gtest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18E460771E0C033800A27CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gtest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -334,6 +434,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		18E460751E0C033800A27CA9 /* Build configuration list for PBXNativeTarget "BatGameEngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E460761E0C033800A27CA9 /* Debug */,
+				18E460771E0C033800A27CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

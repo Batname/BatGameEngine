@@ -1,6 +1,11 @@
 #ifndef includes_h
 #define includes_h
 
+// use gtest https://gist.github.com/massenz/41bb2c8375294f4d9927
+
+// gtest
+#include <gtest/gtest.h>
+
 // std
 #include <iostream>
 #include <fstream>

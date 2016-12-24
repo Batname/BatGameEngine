@@ -56,6 +56,7 @@
 		18A910261E0E5B83007231AF /* Matrix2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.h; sourceTree = "<group>"; };
 		18A910281E0E6727007231AF /* Matrix2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix2DTests.cpp; sourceTree = "<group>"; };
 		18A9102A1E0E94B6007231AF /* Matrix2D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.inl.h; sourceTree = "<group>"; };
+		18A9102C1E0F1C60007231AF /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		18E460671E0C007800A27CA9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
 		18E460691E0C016400A27CA9 /* Vector2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2DTests.cpp; path = ../Vector2DTests.cpp; sourceTree = "<group>"; };
 		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +178,7 @@
 			children = (
 				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
 				18A910281E0E6727007231AF /* Matrix2DTests.cpp */,
+				18A9102C1E0F1C60007231AF /* Header.h */,
 			);
 			name = Math;
 			sourceTree = "<group>";

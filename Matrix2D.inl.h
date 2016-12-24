@@ -16,5 +16,13 @@ Vector2D operator*(const Matrix2D& matrix, const Vector2D& vector)
     return temp;
 }
 
+Matrix2D Matrix2D::rotate(float angleInRadians)
+{
+    return Matrix2D(
+        cosf(angleInRadians), -sinf(angleInRadians),
+        sinf(angleInRadians), cosf(angleInRadians)
+    );
+}
+
 
 #endif /* Matrix2D_inl_h */

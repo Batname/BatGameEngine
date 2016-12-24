@@ -18,9 +18,11 @@ Vector2D operator*(const Matrix2D& matrix, const Vector2D& vector)
 
 Matrix2D Matrix2D::rotate(float angleInRadians)
 {
+    float cosResult = cosf(angleInRadians);
+    float sinResult = sinf(angleInRadians);
     return Matrix2D(
-        cosf(angleInRadians), -sinf(angleInRadians),
-        sinf(angleInRadians), cosf(angleInRadians)
+        cosResult, -sinResult,
+        sinResult, cosResult
     );
 }
 

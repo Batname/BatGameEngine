@@ -16,6 +16,7 @@
 		185DD0CF1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */; };
 		18A910271E0E5B83007231AF /* Matrix2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A910261E0E5B83007231AF /* Matrix2D.h */; };
 		18A910291E0E6727007231AF /* Matrix2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18A910281E0E6727007231AF /* Matrix2DTests.cpp */; };
+		18A9102B1E0E94B6007231AF /* Matrix2D.inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A9102A1E0E94B6007231AF /* Matrix2D.inl.h */; };
 		18E460741E0C033800A27CA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460731E0C033800A27CA9 /* main.cpp */; };
 		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
 		18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* Vector2DTests.cpp */; };
@@ -54,6 +55,7 @@
 		185DD0CE1E0AF2D20014CB12 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		18A910261E0E5B83007231AF /* Matrix2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.h; sourceTree = "<group>"; };
 		18A910281E0E6727007231AF /* Matrix2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix2DTests.cpp; sourceTree = "<group>"; };
+		18A9102A1E0E94B6007231AF /* Matrix2D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.inl.h; sourceTree = "<group>"; };
 		18E460671E0C007800A27CA9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
 		18E460691E0C016400A27CA9 /* Vector2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2DTests.cpp; path = ../Vector2DTests.cpp; sourceTree = "<group>"; };
 		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				18E4607E1E0C376800A27CA9 /* Vector2D.inl.h */,
 				18E4607C1E0C2E2400A27CA9 /* Vector2D.h */,
 				18A910261E0E5B83007231AF /* Matrix2D.h */,
+				18A9102A1E0E94B6007231AF /* Matrix2D.inl.h */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				18E4607D1E0C2E2400A27CA9 /* Vector2D.h in Headers */,
 				18E4607F1E0C376800A27CA9 /* Vector2D.inl.h in Headers */,
+				18A9102B1E0E94B6007231AF /* Matrix2D.inl.h in Headers */,
 				185DD0C21E0AEF0F0014CB12 /* includes.h in Headers */,
 				18E460891E0C820A00A27CA9 /* Clock.hpp in Headers */,
 				18A910271E0E5B83007231AF /* Matrix2D.h in Headers */,

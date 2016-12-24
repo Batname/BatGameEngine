@@ -9,13 +9,14 @@ namespace Math {
         float r0c0;
         float r0c1;
         float r1c0;
-        float f1c1;
+        float r1c1;
         
-        explicit Matrix2D(float r0c0 = 1, float r0c1 = 0, float r1c0 = 0, float f1c1 = 1) :
-        r0c0(r0c0), r0c1(r0c1), r1c0(r1c0), f1c1(f1c1) {}
-        
-        
+        inline explicit Matrix2D(float r0c0 = 1, float r0c1 = 0, float r1c0 = 0, float r1c1 = 1);
     };
+    
+    inline Vector2D operator*(const Matrix2D& left, const Math::Vector2D& right);
+    
+    #include "Matrix2D.inl.h"
 }
 
 #endif /* Matrix2D_h */

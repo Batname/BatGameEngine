@@ -51,3 +51,95 @@ TEST(Matrix3D, Matrix3DVectorMultiplication)
     EXPECT_FLOAT_EQ(victrumPrime.z, (2 * 1) + (0 * 2) + (-4 * 3));
 
 }
+
+TEST(Matrix3D, Rotation)
+{
+    Matrix3D op;
+    op = Matrix3D::rotateZ(0);
+    EXPECT_FLOAT_EQ(op.r0c0, +1.0f);
+    EXPECT_FLOAT_EQ(op.r0c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c1, +1.0f);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+
+    
+    op = Matrix3D::rotateZ(M_PI);
+    EXPECT_FLOAT_EQ(op.r0c0, -1.0f);
+    EXPECT_TRUE(closeEnough(op.r0c1, 0.0f));
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_TRUE(closeEnough(op.r1c0, 0.0f));
+    EXPECT_FLOAT_EQ(op.r1c1, -1.0f);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+
+
+    op = Matrix3D::rotateZ(M_PI / 2);
+    EXPECT_TRUE(closeEnough(op.r0c0, 0.0f));
+    EXPECT_FLOAT_EQ(op.r0c1, -1.0f);
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, 1.0f);
+    EXPECT_TRUE(closeEnough(op.r1c1, 0.0f));
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+
+
+    op = Matrix3D::rotateZ(M_PI / 4);
+    const float sq2ov2Cos = cosf(45.0f * M_PI / 180);
+    const float sq2ov2Sin = sinf(45.0f * M_PI / 180);
+    
+    EXPECT_FLOAT_EQ(op.r0c0, sq2ov2Cos);
+    EXPECT_FLOAT_EQ(op.r0c1, -sq2ov2Sin);
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, sq2ov2Sin);
+    EXPECT_FLOAT_EQ(op.r1c1, sq2ov2Cos);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+    
+    
+    op = Matrix3D::rotateZ(-M_PI / 4);
+    EXPECT_FLOAT_EQ(op.r0c0, sq2ov2Cos);
+    EXPECT_FLOAT_EQ(op.r0c1, -(-sq2ov2Sin));
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, -sq2ov2Sin);
+    EXPECT_FLOAT_EQ(op.r1c1, sq2ov2Cos);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+    
+    
+    op = Matrix3D::rotateZ(M_PI / 3);
+    const float sq3ov2Cos = cosf(60.0f * M_PI / 180);
+    const float sq3ov2Sin = sinf(60.0f * M_PI / 180);
+    EXPECT_FLOAT_EQ(op.r0c0, sq3ov2Cos);
+    EXPECT_FLOAT_EQ(op.r0c1, -sq3ov2Sin);
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, sq3ov2Sin);
+    EXPECT_FLOAT_EQ(op.r1c1, sq3ov2Cos);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+    
+    
+    op = Matrix3D::rotateZ(-M_PI / 3);
+    EXPECT_FLOAT_EQ(op.r0c0, sq3ov2Cos);
+    EXPECT_FLOAT_EQ(op.r0c1, -(-sq3ov2Sin));
+    EXPECT_FLOAT_EQ(op.r0c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r1c0, -sq3ov2Sin);
+    EXPECT_FLOAT_EQ(op.r1c1, sq3ov2Cos);
+    EXPECT_FLOAT_EQ(op.r1c2, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c0, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c1, +0.0f);
+    EXPECT_FLOAT_EQ(op.r2c2, +1.0f);
+}

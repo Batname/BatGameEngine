@@ -24,4 +24,15 @@ Vector3D operator*(const Matrix3D& matrix, const Math::Vector3D& vector)
     );
 }
 
+Matrix3D Matrix3D::rotateZ(float angleInRadians)
+{
+    float cosResult = cosf(angleInRadians);
+    float sinResult = sinf(angleInRadians);
+    return Matrix3D(
+        cosResult, -sinResult, 0.0f,
+        sinResult, cosResult,  0.0f,
+        0.0f,       0.0f,      1.0f
+    );
+}
+
 #endif /* Matrix3D_inl_h */

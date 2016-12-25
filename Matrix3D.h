@@ -17,7 +17,7 @@ namespace Math {
         float r2c2;
     };
 
-    #inlude "Matrix3D.inl.h"
+    #include "Matrix3D.inl.h"
 }
 
 

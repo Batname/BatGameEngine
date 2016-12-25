@@ -4,17 +4,25 @@
 #include "Vector3D.h"
 
 namespace Math {
+    typedef float f;
+    
     struct Matrix3D
     {
-        float r0c0;
-        float r0c1;
-        float r0c2;
-        float r1c0;
-        float r1c1;
-        float r1c2;
-        float r2c0;
-        float r2c1;
-        float r2c2;
+        f r0c0;
+        f r0c1;
+        f r0c2;
+        f r1c0;
+        f r1c1;
+        f r1c2;
+        f r2c0;
+        f r2c1;
+        f r2c2;
+        
+        inline explicit Matrix3D(
+            f r0c0 = 1, f r0c1 = 0, f r0c2 = 0,
+            f r1c0 = 0, f r1c1 = 1, f r1c2 = 0,
+            f r2c0 = 0, f r2c1 = 0, f r2c2 = 1
+        );
     };
 
     #include  "Matrix3D.inl.h"

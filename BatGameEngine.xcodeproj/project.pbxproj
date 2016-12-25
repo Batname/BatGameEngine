@@ -60,7 +60,7 @@
 		18A910261E0E5B83007231AF /* Matrix2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.h; sourceTree = "<group>"; };
 		18A910281E0E6727007231AF /* Matrix2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix2DTests.cpp; sourceTree = "<group>"; };
 		18A9102A1E0E94B6007231AF /* Matrix2D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2D.inl.h; sourceTree = "<group>"; };
-		18A9102C1E0F1C60007231AF /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		18A9102C1E0F1C60007231AF /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
 		18A910311E0FFE57007231AF /* Matrix3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3D.h; sourceTree = "<group>"; };
 		18A910331E0FFE76007231AF /* Matrix3D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3D.inl.h; sourceTree = "<group>"; };
 		18A910371E0FFEB3007231AF /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.h; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			children = (
 				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
 				18A910281E0E6727007231AF /* Matrix2DTests.cpp */,
-				18A9102C1E0F1C60007231AF /* Header.h */,
+				18A9102C1E0F1C60007231AF /* Helpers.h */,
 			);
 			name = Math;
 			sourceTree = "<group>";

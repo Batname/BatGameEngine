@@ -26,7 +26,7 @@ Vector3D operator*(float scalar, const Vector3D& right)
 
 Vector3D operator*(const Vector3D& right, float scalar)
 {
-    return Vector3D(right.x * scalar, right.y * scalar, right.z * scalar);
+    return scalar * right;
 }
 
 Vector3D operator+(const Vector3D& left, const Vector3D& right)

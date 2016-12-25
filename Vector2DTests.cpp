@@ -3,7 +3,7 @@
 
 using namespace Math;
 
-TEST(Vector2D, Constructor)
+TEST(Vector2D, Vector2DConstructor)
 {
     Vector2D first(1, 2);
     EXPECT_EQ(1, first.x);

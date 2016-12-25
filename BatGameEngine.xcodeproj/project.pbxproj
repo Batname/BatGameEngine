@@ -21,6 +21,7 @@
 		18A910341E0FFE76007231AF /* Matrix3D.inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A910331E0FFE76007231AF /* Matrix3D.inl.h */; };
 		18A910381E0FFEB3007231AF /* Vector3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A910371E0FFEB3007231AF /* Vector3D.h */; };
 		18A9103A1E0FFEDD007231AF /* Vector3D.inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A910391E0FFEDD007231AF /* Vector3D.inl.h */; };
+		18A9103D1E103821007231AF /* Vector3DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18A9103C1E1036F0007231AF /* Vector3DTests.cpp */; };
 		18E460741E0C033800A27CA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460731E0C033800A27CA9 /* main.cpp */; };
 		18E460791E0C040E00A27CA9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E460671E0C007800A27CA9 /* libgtest.a */; };
 		18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E460691E0C016400A27CA9 /* Vector2DTests.cpp */; };
@@ -65,6 +66,7 @@
 		18A910331E0FFE76007231AF /* Matrix3D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3D.inl.h; sourceTree = "<group>"; };
 		18A910371E0FFEB3007231AF /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.h; sourceTree = "<group>"; };
 		18A910391E0FFEDD007231AF /* Vector3D.inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.inl.h; sourceTree = "<group>"; };
+		18A9103C1E1036F0007231AF /* Vector3DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3DTests.cpp; sourceTree = "<group>"; };
 		18E460671E0C007800A27CA9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/Cellar/gtest/libgtest.a; sourceTree = "<group>"; };
 		18E460691E0C016400A27CA9 /* Vector2DTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2DTests.cpp; path = ../Vector2DTests.cpp; sourceTree = "<group>"; };
 		18E460711E0C033800A27CA9 /* BatGameEngineTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BatGameEngineTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +225,7 @@
 				18E460691E0C016400A27CA9 /* Vector2DTests.cpp */,
 				18A910281E0E6727007231AF /* Matrix2DTests.cpp */,
 				18A9102C1E0F1C60007231AF /* Helpers.h */,
+				18A9103C1E1036F0007231AF /* Vector3DTests.cpp */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A9103D1E103821007231AF /* Vector3DTests.cpp in Sources */,
 				18A910291E0E6727007231AF /* Matrix2DTests.cpp in Sources */,
 				18E4607A1E0C047C00A27CA9 /* Vector2DTests.cpp in Sources */,
 				18E460881E0C820A00A27CA9 /* Clock.cpp in Sources */,
